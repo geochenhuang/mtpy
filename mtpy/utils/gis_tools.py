@@ -320,7 +320,7 @@ def split_utm_zone(utm_zone):
         zone_number = abs(utm_zone)
     elif isinstance(utm_zone, str):
         zone_number = int(utm_zone[0:-1])
-        is_northern = True if utm_zone[-1].lower() > 'n' else False
+        is_northern = True if utm_zone[-1].lower() > 'm' else False
 
     else:
         msg = "utm_zone type {0}, {1} not supported".format(type(utm_zone),
